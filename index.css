@@ -1,0 +1,115 @@
+* {
+    font-family: Arial, Helvetica, sans-serif; 
+    box-sizing: border-box;
+}
+
+input:focus:invalid {
+    background-color: #FCD0CD;
+  }
+  input:focus:required:valid {
+    background-color: #D2EAD3;
+  }
+  
+.Form__container {
+    margin: 0 15%;
+  }
+  
+.Form__title {
+    text-align: center;
+  }
+
+.Form__wrapper {
+    display: flex;
+}
+
+.Form__input-field-full {
+    width: 95%;
+    margin: 10px;
+}
+
+.Form__input-field-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.Form__input-field-half {
+    width: 48%;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 480px) {
+    .Form__input-field-wrapper {
+        display: inline-block;
+        margin: 10px;
+    }
+    .Form__input-field-half {
+        width: 100%;
+    }
+}
+
+
+.Form__input-label {
+    display: block;
+    margin: 0 10px 10px 0;
+}
+
+.Form__upload-wrapper {
+    margin: 20px 10px;
+}
+
+.Form__upload-label {
+    display: inline;
+    margin-right: 20px;
+}
+
+.Form__input-text {
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+.Form__button-submit {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 14px;
+    width: 97%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.Form__button-cancel {
+    background-color: #F44336;
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+    width: 15%;
+    margin: 0 5%;
+}
+
+@media screen and (max-width: 480px) {
+    .Form__button-cancel {
+        background-color: #F44336;
+        color: white;
+        font-size: 14px;
+        padding: 10px;
+        width: 60%;
+        margin: 0 10%;
+    }
+    .Form__footer {
+        background-color: #F1F1F1; 
+        padding: 20px 0;
+        display: flex;
+    }
+}
+
+.Form__forgot-password {
+    float: right;
+    margin: 10px 30px;
+}
+
+
+.Form__footer {
+    background-color: #F1F1F1; 
+    padding: 20px 0;
+}
