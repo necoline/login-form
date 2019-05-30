@@ -13,31 +13,35 @@
         </h3>
         <form class="Form__form">
             <fieldset class="Form__wrapper">
-                <div class="Form__input-field-full">
-                    <label for="name" class="Form__input-label">
-                    Name
-                    </label>
-                    <input 
-                    type="text" 
-                    name="name" 
-                    class="Form__input-text" 
-                    placeholder="Enter Name"  
-                    required 
-                    />
+                <div class="Form__input-field-row">
+                    <div class="Form__input-field">
+                        <label for="name" class="Form__input-label">
+                        Name
+                        </label>
+                        <input 
+                        type="text" 
+                        name="name" 
+                        class="Form__input-text" 
+                        placeholder="Enter Name"  
+                        required 
+                        />
+                    </div>
                 </div>
-                <div class="Form__input-field-full">
-                    <label for="dob" class="Form__input-label">
-                    Date of Birth
-                    </label>
-                    <input 
-                    type="date" 
-                    name="dob" 
-                    class="Form__input-text"   
-                    required 
-                    />
+                <div class="Form__input-field-row">
+                    <div class="Form__input-field">
+                        <label for="dob" class="Form__input-label">
+                        Date of Birth
+                        </label>
+                        <input 
+                        type="date" 
+                        name="dob" 
+                        class="Form__input-text"   
+                        required 
+                        />
+                    </div>
                 </div>
-                <div class="Form__input-field-wrapper">
-                    <div class="Form__input-field-half">
+                <div class="Form__input-field-row">
+                    <div class="Form__input-field">
                         <label for="username" class="Form__input-label">
                             Username
                         </label>
@@ -51,7 +55,7 @@
                         required 
                         />
                     </div>
-                    <div class="Form__input-field-half">
+                    <div class="Form__input-field">
                         <label for="password" class="Form__input-label">
                             Password
                         </label>
@@ -67,33 +71,37 @@
                         />
                     </div>
                 </div>
-                <div class='Form__input-field-full'>
-                    <label for="phoneNumber" class="Form__input-label">
-                    Phone Number
-                    </label>
-                    <input 
-                    type="tel"
-                    placeholder="Enter Phone Number"
-                    name="phoneNumber" 
-                    class="Form__input-text" 
-                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                    />
+                <div class='Form__input-field-row'>
+                    <div class="Form__input-field">
+                        <label for="phoneNumber" class="Form__input-label">
+                        Phone Number
+                        </label>
+                        <input 
+                        type="tel"
+                        placeholder="Enter Phone Number"
+                        name="phoneNumber" 
+                        class="Form__input-text" 
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        />
+                    </div>
                 </div>
-                <div class='Form__input-field-full Form__upload-wrapper'>
-                    <label for="upload" class="Form__upload-label">
-                    Upload Photo
-                    </label>
-                    <input 
-                    type="file"
-                    name="upload" 
-                    class="upload-button" 
-                    >
+                <div class='Form__input-field-row Form__upload-wrapper'>
+                    <div class="Form__input-field">
+                        <label for="upload" class="Form__upload-label">
+                        Upload Photo
+                        </label>
+                        <input 
+                        type="file"
+                        name="upload" 
+                        class="upload-button" 
+                        >
+                    </div>
                 </div>
             </input>
             <button value="Submit" class="Form__button-submit">
                 Login
             </button>
-            <div class='Form__input-field-full'>
+            <div class='Form__input-field-row Form__checkbox'>
                 <input type="checkbox" name="rememberMe">
                 <label for="rememberMe"> Remember me </label>
             </div>

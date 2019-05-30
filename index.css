@@ -3,6 +3,11 @@
     box-sizing: border-box;
 }
 
+input {
+    border-color: #F1F1F1;
+    border-style: solid;
+}
+
 input:focus:invalid {
     background-color: #FCD0CD;
   }
@@ -11,8 +16,9 @@ input:focus:invalid {
   }
   
 .Form__container {
-    margin: 0 15%;
-  }
+    margin: auto;
+    max-width: 640px;
+}
   
 .Form__title {
     text-align: center;
@@ -20,96 +26,67 @@ input:focus:invalid {
 
 .Form__wrapper {
     display: flex;
+    padding: 8px 16px;
 }
 
-.Form__input-field-full {
-    width: 95%;
-    margin: 10px;
-}
-
-.Form__input-field-wrapper {
+.Form__input-field-row {
+    margin-bottom: 16px;
     display: flex;
-    flex-direction: row;
-    margin: 10px;
 }
 
-.Form__input-field-half {
-    width: 48%;
-    margin-right: 5px;
+.Form__input-field {
+    flex: 1;
 }
 
-@media screen and (max-width: 480px) {
-    .Form__input-field-wrapper {
-        display: inline-block;
-        margin: 10px;
-    }
-    .Form__input-field-half {
-        width: 100%;
-    }
-}
-
-
-.Form__input-label {
-    display: block;
-    margin: 0 10px 10px 0;
+.Form__input-field + .Form__input-field {
+    margin-left: 8px;
 }
 
 .Form__upload-wrapper {
-    margin: 20px 10px;
+    margin: 32px 0;
 }
 
 .Form__upload-label {
     display: inline;
-    margin-right: 20px;
+    margin-right: 24px;
 }
 
 .Form__input-text {
-    display: block;
     width: 100%;
-    padding: 10px;
+    padding: 8px;
+}
+
+.Form__checkbox {
+    margin: 16px 0; 
 }
 
 .Form__button-submit {
     background-color: #4CAF50;
     color: white;
-    font-size: 14px;
-    width: 97%;
-    margin: 10px;
-    padding: 10px;
+    font-size: 16px;
+    padding: 8px;
+    width: 100%
 }
 
 .Form__button-cancel {
     background-color: #F44336;
     color: white;
     font-size: 14px;
-    padding: 10px;
-    width: 15%;
-    margin: 0 5%;
+    padding: 16px;
+    min-width: fit-content;
 }
 
 @media screen and (max-width: 480px) {
-    .Form__button-cancel {
-        background-color: #F44336;
-        color: white;
-        font-size: 14px;
-        padding: 10px;
-        width: 60%;
-        margin: 0 10%;
-    }
-    .Form__footer {
-        background-color: #F1F1F1; 
-        padding: 20px 0;
-        display: flex;
-    }
+    
 }
 
 .Form__forgot-password {
     float: right;
-    margin: 10px 30px;
+    margin: 8px 24px;
 }
 
 
 .Form__footer {
     background-color: #F1F1F1; 
-    padding: 20px 0;
+    padding: 24px 24px;
 }
