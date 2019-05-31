@@ -50,8 +50,8 @@
                         name="username" 
                         class="Form__input-text" 
                         placeholder="Enter Username" 
-                        pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,12}$" 
-                        data-validation-msg="Username must be 2-12 characters" 
+                        pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{4,30}$" 
+                        data-validation-msg="Username must be 4-30 characters" 
                         required 
                         />
                     </div>
@@ -65,8 +65,8 @@
                         id="password" 
                         class="Form__input-text"
                         placeholder="Password" 
-                        pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,12}$" 
-                        data-validation-msg="Password must be 2-12 characters" 
+                        pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{4,30}$" 
+                        data-validation-msg="Password must be 4-30 characters" 
                         required 
                         />
                     </div>
@@ -93,7 +93,7 @@
                         <input 
                         type="file"
                         name="upload" 
-                        class="upload-button" 
+                        class="Form__button-upload" 
                         >
                     </div>
                 </div>
