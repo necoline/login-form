@@ -2,115 +2,118 @@
 
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="index.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  </head>
-  <body>
-    <div class="Form__container">
-        <h3 class="Form__title">
-        Login Form
-        </h3>
-        <form class="Form__form">
-            <fieldset class="Form__wrapper">
-                <div class="Form__input-field-row">
-                    <div class="Form__input-field">
-                        <label for="name" class="Form__input-label">
-                        Name
-                        </label>
-                        <input 
-                        type="text" 
-                        name="name" 
-                        class="Form__input-text" 
-                        placeholder="Enter Name"  
-                        required 
-                        />
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <div class="Form__container">
+            <h3 class="Form__title">
+            Login Form
+            </h3>
+            <form class="Form__form">
+                <fieldset class="Form__wrapper">
+                    <div class="Form__input-field-row">
+                        <div class="Form__input-field">
+                            <label for="name" class="Form__input-label">
+                            Name
+                            </label>
+                            <input 
+                            type="text" 
+                            name="name" 
+                            class="Form__input-text" 
+                            placeholder="Enter Name"  
+                            required 
+                            />
+                        </div>
                     </div>
-                </div>
-                <div class="Form__input-field-row">
-                    <div class="Form__input-field">
-                        <label for="dob" class="Form__input-label">
-                        Date of Birth
-                        </label>
-                        <input 
-                        type="date" 
-                        name="dob" 
-                        class="Form__input-text"   
-                        required 
-                        />
+                    <div class="Form__input-field-row">
+                        <div class="Form__input-field">
+                            <label for="dob" class="Form__input-label">
+                            Date of Birth
+                            </label>
+                            <input 
+                            type="date" 
+                            name="dob" 
+                            class="Form__input-text"   
+                            required 
+                            />
+                        </div>
                     </div>
-                </div>
-                <div class="Form__input-field-row">
-                    <div class="Form__input-field">
-                        <label for="username" class="Form__input-label">
-                            Username
-                        </label>
-                        <input 
-                        type="text" 
-                        name="username" 
-                        class="Form__input-text" 
-                        placeholder="Enter Username" 
-                        pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{4,30}$" 
-                        data-validation-msg="Username must be 4-30 characters" 
-                        required 
-                        />
+                    <div class="Form__input-field-row">
+                        <div class="Form__input-field">
+                            <label for="username" class="Form__input-label">
+                                Username
+                            </label>
+                            <input 
+                            type="text" 
+                            name="username" 
+                            class="Form__input-text" 
+                            placeholder="Enter Username" 
+                            pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{4,30}$" 
+                            data-validation-msg="Username must be 4-30 characters" 
+                            required 
+                            />
+                        </div>
+                        <div class="Form__input-field">
+                            <label for="password" class="Form__input-label">
+                                Password
+                            </label>
+                            <input 
+                            type="password" 
+                            name="password" 
+                            id="password" 
+                            class="Form__input-text"
+                            placeholder="Password" 
+                            pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{4,30}$" 
+                            data-validation-msg="Password must be 4-30 characters" 
+                            required 
+                            />
+                        </div>
                     </div>
-                    <div class="Form__input-field">
-                        <label for="password" class="Form__input-label">
-                            Password
-                        </label>
-                        <input 
-                        type="password" 
-                        name="password" 
-                        id="password" 
-                        class="Form__input-text"
-                        placeholder="Password" 
-                        pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{4,30}$" 
-                        data-validation-msg="Password must be 4-30 characters" 
-                        required 
-                        />
+                    <div class='Form__input-field-row'>
+                        <div class="Form__input-field">
+                            <label for="phoneNumber" class="Form__input-label">
+                            Phone Number
+                            </label>
+                            <input 
+                            type="tel"
+                            placeholder="Enter Phone Number"
+                            name="phoneNumber" 
+                            class="Form__input-text" 
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            />
+                        </div>
                     </div>
-                </div>
-                <div class='Form__input-field-row'>
-                    <div class="Form__input-field">
-                        <label for="phoneNumber" class="Form__input-label">
-                        Phone Number
-                        </label>
-                        <input 
-                        type="tel"
-                        placeholder="Enter Phone Number"
-                        name="phoneNumber" 
-                        class="Form__input-text" 
-                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                        />
+                    <div class='Form__input-field-row Form__upload-wrapper'>
+                        <div class="Form__input-field">
+                            <label for="upload" class="Form__upload-label">
+                            Upload Photo
+                            </label>
+                            <input 
+                            type="file"
+                            name="upload" 
+                            class="Form__button-upload" 
+                            />
+                        </div>
                     </div>
-                </div>
-                <div class='Form__input-field-row Form__upload-wrapper'>
-                    <div class="Form__input-field">
-                        <label for="upload" class="Form__upload-label">
-                        Upload Photo
-                        </label>
-                        <input 
-                        type="file"
-                        name="upload" 
-                        class="Form__button-upload" 
-                        >
+                    <button value="Submit" class="Form__button-submit">
+                        Login
+                    </button>
+                    <div class='Form__input-field-row Form__checkbox'>
+                        <input type="checkbox" name="rememberMe">
+                        <label for="rememberMe"> Remember me </label>
                     </div>
-                </div>
-            </input>
-            <button value="Submit" class="Form__button-submit">
-                Login
-            </button>
-            <div class='Form__input-field-row Form__checkbox'>
-                <input type="checkbox" name="rememberMe">
-                <label for="rememberMe"> Remember me </label>
+                </fieldset>
+            </form>
+            <div class="Form__footer">
+                <button value="cancel" class="Form__button-cancel">
+                    Cancel
+                </button>
+                <span class="Form__forgot-password">
+                    Forgot <a href="https://donate.doctorswithoutborders.org">password?</a>
+                </span>
             </div>
-            </fieldset>
-        </form>
-        <div class="Form__footer">
-            <button value="cancel" class="Form__button-cancel">Cancel</button>
-            <span class="Form__forgot-password">Forgot <a href="https://www.google.com">password?</a></span>
-        </div>
         </div>
     </body>
 </html>
